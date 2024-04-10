@@ -53,6 +53,23 @@ body{
     box-shadow: 0px 0px 12px 3px white;
     position: absolute;
     background-color: white; 
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.system .starpath .star .starflare{
+    background: linear-gradient(transparent, white);
+    height: 70px;
+    width: 2px;
+    position: absolute;
+    top: -70px;
+    z-index: -1;
+}
+.system .starpath .star .starflare4{
+    width: 3px;
+    height: 80px;
+    top: -80px;
 }
 .system .starpath .star1{
     width: 4px;
@@ -72,7 +89,7 @@ body{
 .system .starpath .star4{
     width: 8px;
     height: 8px;
-    animation: starmovement 5s 4.5s infinite ease-in;
+    animation: starmovement 5s 4s infinite ease-in;
 }
 .system .starpath .star5{
     width: 2px;
@@ -82,7 +99,7 @@ body{
 .system .starpath .star6{
     width: 4px;
     height: 4px;
-    animation: starmovement 2.7s 4s infinite ease-in;
+    animation: starmovement 2.7s 3.8s infinite ease-in;
 }
 .system .starpath .star7{
     width: 4px;
