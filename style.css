@@ -1,174 +1,174 @@
-*{
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
-body{
-    background-color: black;
-    color: white;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.system{
-    min-width: 100px;
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.system {
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.system .starpath{
-    height: 40vh;
-    position: fixed;
-    top: -50px;
-    transform: rotate(-27deg);
+.system .starpath {
+  height: 40vh;
+  position: fixed;
+  top: -50px;
+  transform: rotate(-27deg);
 }
-.system .starpath1{
-    left: 4%;
+.system .starpath1 {
+  left: 4%;
 }
-.system .starpath2{
-    left: 17%;
+.system .starpath2 {
+  left: 17%;
 }
-.system .starpath3{
-    left: 35%;
+.system .starpath3 {
+  left: 35%;
 }
-.system .starpath4{
-    left: 52%;
-    height: 45vh;
+.system .starpath4 {
+  left: 52%;
+  height: 45vh;
 }
-.system .starpath5{
-    left: 67%;
+.system .starpath5 {
+  left: 67%;
 }
-.system .starpath6{
-    left: 83%;
+.system .starpath6 {
+  left: 83%;
 }
-.system .starpath7{
-    left: 94%;
+.system .starpath7 {
+  left: 94%;
 }
-.system .starpath .star{
-    border-radius: 100%;
-    box-shadow: 0px 0px 12px 3px white;
-    position: absolute;
-    background-color: white; 
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.system .starpath .star {
+  border-radius: 100%;
+  box-shadow: 0px 0px 12px 3px white;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.system .starpath .star .starflare{
-    background: linear-gradient(transparent, white);
-    height: 70px;
-    width: 2px;
-    position: absolute;
-    top: -70px;
-    z-index: -1;
+.system .starpath .star .starflare {
+  background: linear-gradient(transparent, white);
+  height: 70px;
+  width: 2px;
+  position: absolute;
+  top: -70px;
+  z-index: -1;
 }
-.system .starpath .star .starflare4{
-    width: 3px;
-    height: 80px;
-    top: -80px;
+.system .starpath .star .starflare4 {
+  width: 3px;
+  height: 80px;
+  top: -80px;
 }
-.system .starpath .star1{
-    width: 4px;
-    height: 4px;
-    animation: starmovement 2s 1.8s infinite ease-in;
+.system .starpath .star1 {
+  width: 4px;
+  height: 4px;
+  animation: starmovement 2s 1.8s infinite ease-in;
 }
-.system .starpath .star2{
-    width: 6px;
-    height: 6px;
-    animation: starmovement 3s 3.7s infinite ease-in;
+.system .starpath .star2 {
+  width: 6px;
+  height: 6px;
+  animation: starmovement 3s 3.7s infinite ease-in;
 }
-.system .starpath .star3{
-    width: 2px;
-    height: 2px;
-    animation: starmovement 2s 2.7s infinite ease-in;
+.system .starpath .star3 {
+  width: 2px;
+  height: 2px;
+  animation: starmovement 2s 2.7s infinite ease-in;
 }
-.system .starpath .star4{
-    width: 8px;
-    height: 8px;
-    animation: starmovement 5s 4s infinite ease-in;
+.system .starpath .star4 {
+  width: 8px;
+  height: 8px;
+  animation: starmovement 5s 4s infinite ease-in;
 }
-.system .starpath .star5{
-    width: 2px;
-    height: 2px;
-    animation: starmovement 1.7s 2s infinite ease-in;
+.system .starpath .star5 {
+  width: 2px;
+  height: 2px;
+  animation: starmovement 1.7s 2s infinite ease-in;
 }
-.system .starpath .star6{
-    width: 4px;
-    height: 4px;
-    animation: starmovement 2.7s 3.8s infinite ease-in;
+.system .starpath .star6 {
+  width: 4px;
+  height: 4px;
+  animation: starmovement 2.7s 3.8s infinite ease-in;
 }
-.system .starpath .star7{
-    width: 4px;
-    height: 4px;
-    animation: starmovement 2.5s 3s infinite ease-in;
+.system .starpath .star7 {
+  width: 4px;
+  height: 4px;
+  animation: starmovement 2.5s 3s infinite ease-in;
 }
-.system .sun{
-    width: 80px ;
-    height: 80px;
-    border-radius: 50%;
-    background-color: yellow;
-    box-shadow: 0px 0px 10px 2px yellow;
-    animation: sunflares 1s infinite alternate linear;
-    z-index: 3;
+.system .sun {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: yellow;
+  box-shadow: 0px 0px 10px 2px yellow;
+  animation: sunflares 1s infinite alternate linear;
+  z-index: 3;
 }
-.system .firstorbit{
-    border-top: 2px solid gray;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    animation: rotateorbit 5s infinite linear;
-    z-index: 1;
+.system .firstorbit {
+  border-top: 2px solid gray;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  animation: rotateorbit 5s infinite linear;
+  z-index: 1;
 }
-.system .firstorbit .orbitmask{
-    width: 100px;
-    background-color: black;
-    height: 100px;
-    position: absolute;
-    top: -2px;
-    right: -2px;
-    z-index: 2;
+.system .firstorbit .orbitmask {
+  width: 100px;
+  background-color: black;
+  height: 100px;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  z-index: 2;
 }
-.system .firstorbit .planet{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: green;
-    border: 1px solid blue;
-    position: absolute;
-    top: -20px;
-    z-index: 3;
+.system .firstorbit .planet {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: green;
+  border: 1px solid blue;
+  position: absolute;
+  top: -20px;
+  z-index: 3;
 }
 @keyframes starmovement {
-    from{
-        top: 0%;
-        opacity: 100%;
-    }
-    to{
-        top: 100%;
-        opacity: 0%;
-    }
+  from {
+    top: 0%;
+    opacity: 100%;
+  }
+  to {
+    top: 100%;
+    opacity: 0%;
+  }
 }
 @keyframes sunflares {
-    0%{
-        box-shadow: 0px 0px 8px 2px yellow;
-    }
-    100%{
-        box-shadow: 0px 0px 12px 2px yellow;
-    }
+  0% {
+    box-shadow: 0px 0px 8px 2px yellow;
+  }
+  100% {
+    box-shadow: 0px 0px 12px 2px yellow;
+  }
 }
-@keyframes rotateorbit{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+@keyframes rotateorbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
