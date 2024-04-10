@@ -57,6 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0%;
 }
 .system .starpath .star .starflare {
   background: linear-gradient(transparent, white);
