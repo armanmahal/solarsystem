@@ -11,6 +11,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+.hidden{
+  display: none;
 }
 .system {
   min-width: 100px;
@@ -146,7 +150,15 @@ body {
   right: -2px;
   z-index: 2;
 }
-.system .firstorbit .planet {
+.system .centreEarth{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: green;
+  box-shadow: 0px 0px 10px 2px green;
+  z-index: 3;
+}
+.system .firstorbit .earth {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -155,6 +167,260 @@ body {
   position: absolute;
   top: -20px;
   z-index: 3;
+}
+.system .firstorbit .moon{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  border: 1px solid white;
+  position: absolute;
+  top: -15px;
+  z-index: 3;
+}
+
+.systemfull {
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.systemfull .sun {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: yellow;
+  box-shadow: 0px 0px 10px 2px yellow;
+  animation: sunflares 1s infinite alternate linear;
+  z-index: 3;
+}
+.systemfull .firstorbit {
+  border-top: 2px solid gray;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  animation: rotateorbit 1s infinite linear;
+  z-index: 1;
+}
+.systemfull .firstorbit .planet {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: brown;
+  border: 1px solid orange;
+  position: absolute;
+  top: -10px;
+  z-index: 3;
+}
+
+.systemfull .secondorbit {
+  border-top: 2px solid gray;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  animation: rotateorbit 2.55s infinite linear;
+  z-index: 1;
+}
+.systemfull .secondorbit .planet {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: orange;
+  border: 1px solid orangered;
+  position: absolute;
+  top: -13px;
+  z-index: 3;
+}
+
+.systemfull .thirdorbit {
+  border-top: 2px solid gray;
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  animation: rotateorbit 4.15s infinite linear;
+  z-index: 1;
+}
+.systemfull .thirdorbit .planet {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: green;
+  border: 2px solid blue;
+  position: absolute;
+  top: -13px;
+  z-index: 3;
+}
+
+.systemfull .fourthorbit {
+  border-top: 2px solid gray;
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  animation: rotateorbit 7.81s infinite linear;
+  z-index: 1;
+}
+.systemfull .fourthorbit .planet {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: orangered;
+  border: 1px solid red;
+  position: absolute;
+  top: -13px;
+  z-index: 3;
+}
+
+.systemfull .fifthorbit {
+  border-top: 2px solid gray;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  animation: rotateorbit 49.23s infinite linear;
+  z-index: 1;
+}
+.systemfull .fifthorbit .planet {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgb(189, 132, 66);
+  border: 1px solid rgb(110, 50, 26);
+  position: absolute;
+  top: -13px;
+  z-index: 3;
+}
+
+.systemfull .sixthorbit {
+  border-top: 2px solid gray;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  animation: rotateorbit 122.26s infinite linear;
+  z-index: 1;
+}
+.systemfull .sixthorbit .planet {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: rgb(228, 180, 125);
+  border: 1px solid rgb(131, 96, 82);
+  position: absolute;
+  top: -13px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.systemfull .sixthorbit .planet .rings{
+  position: absolute;
+  width: 52px;
+  height: 46px;
+  border: 3px solid rgb(228, 172, 108);
+  border-radius: 50%;
+}
+
+.systemfull .seventhorbit {
+  border-top: 2px solid gray;
+  width: 550px;
+  height: 550px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  animation: rotateorbit 348.72s infinite linear;
+  z-index: 1;
+}
+.systemfull .seventhorbit .planet {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: rgb(68, 156, 228);
+  border: 1px solid rgb(19, 122, 206);
+  position: absolute;
+  top: -13px;
+  z-index: 3;
+}
+
+.systemfull .eigthorbit {
+  border-top: 2px solid gray;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  animation: rotateorbit 683.98s infinite linear;
+  z-index: 1;
+}
+.systemfull .eigthorbit .planet {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: rgb(22, 109, 190);
+  border: 1px solid rgb(129, 183, 226);
+  position: absolute;
+  top: -13px;
+  z-index: 3;
+}
+
+
+.systemfull h1{
+  position: fixed;
+  top: 2rem;
+}
+
+
+
+.buttons_section{
+  position: fixed;
+  bottom: 4vh;
+  display: flex;
+  gap: 9px;
+}
+.buttons_section button{
+  width: 4rem;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 2px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 4px 1px white;
+  transition: color 0.3s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+.buttons_section button:hover{
+  box-shadow: 0px 0px 8px 2px white;
+  color: black;
+  background-color: white;
 }
 @keyframes starmovement {
   from {
@@ -179,4 +445,104 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+@media only screen and (max-width: 768px) {
+  .buttons_section button:hover{
+    box-shadow: 0px 0px 4px 1px white;
+    color: white;
+    background-color: black;
+  }
+
+  .systemfull h1{
+    font-size: 22px;
+  }
+  .systemfull .sun {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .systemfull .firstorbit {
+    width: 100px;
+    height: 100px;
+  }
+  .systemfull .firstorbit .planet {
+    width: 10px;
+    height: 10px;
+    top: -5px;
+  }
+
+  .systemfull .secondorbit {
+    width: 130px;
+    height: 130px;
+  }
+  .systemfull .secondorbit .planet {
+    width: 14px;
+    height: 14px;
+    top: -7px;
+  }
+
+  .systemfull .thirdorbit {
+    width: 170px;
+    height: 170px;
+  }
+  .systemfull .thirdorbit .planet {
+    width: 15px;
+    height: 15px;
+    top: -7px;
+  }
+
+  .systemfull .fourthorbit {
+    width: 200px;
+    height: 200px;
+  }
+  .systemfull .fourthorbit .planet {
+    width: 10px;
+    height: 10px;
+    top: -5px;
+  }
+
+  .systemfull .fifthorbit {
+    width: 230px;
+    height: 230px;
+  }
+  .systemfull .fifthorbit .planet {
+    width: 25px;
+    height: 25px;
+    top: -13px;
+  }
+
+  .systemfull .sixthorbit {
+    width: 300px;
+    height: 300px;
+  }
+  .systemfull .sixthorbit .planet {
+    width: 21px;
+    height: 21px;
+    top: -10px;
+  }
+  .systemfull .sixthorbit .planet .rings{
+    width: 35px;
+    height: 30px;
+  }
+
+  .systemfull .seventhorbit {
+    width: 330px;
+    height: 330px;
+  }
+  .systemfull .seventhorbit .planet {
+    width: 12px;
+    height: 12px;
+    top: -6px;
+  }
+
+  .systemfull .eigthorbit {
+    width: 350px;
+    height: 350px;
+  }
+  .systemfull .eigthorbit .planet {
+    width: 13px;
+    height: 13px;
+    top: -7px;
+  }
+
 }

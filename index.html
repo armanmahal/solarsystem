@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SolarSystem</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-size: 2rem;
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 30;
+      }
+    </style>
   </head>
   <body>
-    <div class="system">
+    <div class="sys1 system">
+      <!-- stars -->
       <div class="starpath starpath1">
         <div class="starpathmask"></div>
         <div class="star star1">
@@ -51,11 +62,54 @@
         </div>
       </div>
 
+      <!-- sun and earth -->
+      <div class="sun"></div>
+      <div class="firstorbit">
+        <div class="earth"></div>
+        <div class="orbitmask"></div>
+      </div>
+    </div>
+
+    <!-- full solarsystem -->
+    
+    <div class="sys2 hidden">
+      <h1>TIME SCALE: 1 sec = 88 days</h1>
       <div class="sun"></div>
       <div class="firstorbit">
         <div class="planet"></div>
-        <div class="orbitmask"></div>
       </div>
+      <div class="secondorbit">
+        <div class="planet"></div>
+      </div>
+      <div class="thirdorbit">
+        <div class="planet"></div>
+      </div>
+      <div class="fourthorbit">
+        <div class="planet"></div>
+      </div>
+      <div class="fifthorbit">
+        <div class="planet"></div>
+      </div>
+      <div class="sixthorbit">
+        <div class="planet">
+          <div class="rings"></div>
+        </div>
+      </div>
+      <div class="seventhorbit">
+        <div class="planet"></div>
+      </div>
+      <div class="eigthorbit">
+        <div class="planet"></div>
+      </div>
+    </div>
+
+    <div class="buttons_section">
+      <button class="zoom-out-btn">
+        <span class="material-symbols-outlined"> zoom_out </span>
+      </button>
+      <button class="zoom-in-btn">
+        <span class="material-symbols-outlined"> zoom_in </span>
+      </button>
     </div>
   </body>
   <script src="script.js"></script>
