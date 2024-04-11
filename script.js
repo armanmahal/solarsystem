@@ -9,44 +9,50 @@ const system = document.querySelector('.sys1')
 const systemfull = document.querySelector('.sys2')
 
 
-let state = 'sun-and-earth';
+let state = 1;
 
 
 const zoomInHandler = () => {
 
-    if(state === 'sun-and-earth'){
+    if(state === 1){
         centrePosition.classList.remove('sun');
         centrePosition.classList.add('centreEarth')
         orbitPosition.classList.remove('earth')
         orbitPosition.classList.add('moon')
-        state = 'earth-and-moon'
+        state = 0
     }
-    if(state === 'solarsystem'){
+    if(state === 2){
         system.classList.add('system')
         system.classList.remove('hidden')
         systemfull.classList.add('hidden')
         systemfull.classList.remove('systemfull')
-        state = 'sun-and-earth'
+        state = 1
     }
 
 }
 
 const zoomOutHandler = () => {
 
-    if(state === 'earth-and-moon'){
+    if(state === 0){
+        console.log("statecurrent:", state)
+        system.classList.add('system')
+        system.classList.remove('hidden')
+        systemfull.classList.add('hidden')
+        systemfull.classList.remove('systemfull')
         centrePosition.classList.remove('centreEarth');
         centrePosition.classList.add('sun')
         orbitPosition.classList.remove('moon')
         orbitPosition.classList.add('earth')
-        state = 'sun-and-earth'
+        state = 1
+        console.log("changedstate:" , state)
     }
 
-    if(state === 'sun-and-earth'){
+    if(state === 1){
         system.classList.add('hidden');
         system.classList.remove('system')
         systemfull.classList.remove('hidden')
         systemfull.classList.add('systemfull')
-        state = 'solarsystem'
+        state = 2
     }
 
 }
