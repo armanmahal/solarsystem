@@ -12,6 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
 }
 .hidden{
   display: none;
@@ -185,6 +186,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+.systemfull .background{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: url('./public/starbg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -2;
 }
 .systemfull .sun {
   width: 3rem;
