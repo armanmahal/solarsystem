@@ -192,7 +192,7 @@ body {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background: url('./public/starbg.jpg');
+  background: url('https://images.pexels.com/photos/1257860/pexels-photo-1257860.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
